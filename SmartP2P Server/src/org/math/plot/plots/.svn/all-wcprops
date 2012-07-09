@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots
+END
+BarPlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/BarPlot.java
+END
+ScatterPlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/ScatterPlot.java
+END
+GaussianDensityLayerPlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/GaussianDensityLayerPlot.java
+END
+LayerPlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/LayerPlot.java
+END
+GridPlot3D.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/GridPlot3D.java
+END
+DensityLayerPlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/DensityLayerPlot.java
+END
+BoxPlot2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/BoxPlot2D.java
+END
+StaircasePlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/StaircasePlot.java
+END
+QuantileLayerPlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/QuantileLayerPlot.java
+END
+Plot.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/Plot.java
+END
+BoxPlot3D.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/BoxPlot3D.java
+END
+HistogramPlot2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/HistogramPlot2D.java
+END
+HistogramPlot3D.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/HistogramPlot3D.java
+END
+LinePlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/LinePlot.java
+END
+CloudPlot2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/CloudPlot2D.java
+END
+CloudPlot3D.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/CloudPlot3D.java
+END
+VectorLayerPlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plots/VectorLayerPlot.java
+END

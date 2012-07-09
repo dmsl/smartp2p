@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/logoback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/relativeLayout1">
+        <EditText android:text="Username1" android:layout_width="match_parent" android:id="@+id/editText3" android:layout_height="wrap_content" android:layout_below="@+id/textView3" android:layout_alignParentLeft="true"></EditText>
+        <EditText android:text="1234" android:layout_width="match_parent" android:id="@+id/editText4" android:inputType="textPassword" android:layout_height="wrap_content" android:layout_below="@+id/textView4" android:layout_alignParentLeft="true"></EditText>
+        <TextView android:layout_width="wrap_content" android:text="Password:" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_below="@+id/editText3" android:layout_alignParentLeft="true"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="Username:" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_below="@+id/editText2" android:layout_alignParentLeft="true"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="Server Port:" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_below="@+id/editText1" android:layout_alignParentLeft="true"></TextView>
+        <TextView android:layout_width="wrap_content" android:text="Server Ip:" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></TextView>
+        <EditText android:text="10.16.5.193" android:id="@+id/editText1" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_width="match_parent">
+            <requestFocus></requestFocus>
+        </EditText>
+        <EditText android:text="4500" android:layout_width="match_parent" android:id="@+id/editText2" android:layout_height="wrap_content" android:layout_below="@+id/textView2" android:layout_alignParentLeft="true"></EditText>
+        <Button android:id="@+id/button1" android:layout_height="wrap_content" android:text="Register" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_width="match_parent"></Button>
+    </RelativeLayout>
+</LinearLayout>

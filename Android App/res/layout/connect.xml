@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/logoback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/relativeLayout1">
+        <TextView android:layout_width="wrap_content" android:text="Server Ip:" android:layout_alignParentTop="true" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:id="@+id/textView1"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/editText1" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:text="10.16.5.193">
+            <requestFocus></requestFocus>
+        </EditText>
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/editText1" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:id="@+id/textView2" android:text="Server Port:"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/editText2" android:layout_below="@+id/textView2" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:text="4500"></EditText>
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/editText2" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:id="@+id/textView3" android:text="User Id:"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/editText3" android:layout_below="@+id/textView3" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:text="1"></EditText>
+        <TextView android:layout_width="wrap_content" android:text="Password:" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_below="@+id/editText3" android:layout_alignParentLeft="true" android:layout_height="wrap_content" android:id="@+id/textView4"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/editText4" android:layout_below="@+id/textView4" android:layout_alignParentLeft="true" android:inputType="textPassword" android:layout_height="wrap_content" android:text="1234"></EditText>
+        <Button android:id="@+id/button1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Connect" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></Button>
+    </RelativeLayout>
+</LinearLayout>

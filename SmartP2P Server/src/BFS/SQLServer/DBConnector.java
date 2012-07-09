@@ -1,0 +1,170 @@
+/*
+ * This is framework for searching objects (e.g. images, etc.) captured 
+ * by the users in a mobile social community. Our framework is founded on an 
+ * in-situ data storage model, where captured objects remain local on their owner’s 
+ * smartphones and searches take place over a lookup structure we compute dynamically. 
+ * Initially, a query user invokes a search to find an object of interest. 
+ * Our structure concurrently optimizes several conflicting objectives using a 
+ * MultiObjective Optimization approach and calculates a set of high quality nondominated 
+ * Query Routing Trees (QRTs) in a single run. The optimal set is then forwarded to the query 
+ * user to select a QRT to be searched based on instant requirements and preferences. 
+ * To demonstrate the SmartP2P we utilize our cloud of smartphones (SmartLab) composed 
+ * of 40 Android devices. The conference attendees will be able to appreciate how social 
+ * content can be efficiently shared without revealing their personal content to a centralized 
+ * authority. 
+ * 
+ *Copyright (C) 2011 - 2012 Christos Aplitsiotis
+ *This program is free software: you can redistribute it and/or modify
+ *it under the terms of the GNU General Public License as published by
+ *the Free Software Foundation, either version 3 of the License, or
+ *at your option) any later version.
+ *This program is distributed in the hope that it will be useful,
+ *but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *GNU General Public License for more details.
+ *?ou should have received a copy of the GNU General Public License
+ *along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+ 
+package BFS.SQLServer;
+
+import java.sql.*;
+
+public class DBConnector{
+
+	private Connection con;
+	private ResultSet rs;
+	private Statement stmt;
+	private PreparedStatement pstmt;
+	private String connectionUrl = "jdbc:sqlserver://CS7311;databaseName=GEOLIFE;user=sa;password=zeizei11;";
+	
+	public DBConnector(){
+		System.out.print("Connecting...");
+		try {
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			con = DriverManager.getConnection(connectionUrl);
+			System.out.println("OK");	
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void test(){
+		System.out.println("Testing...");
+		try {
+
+			String SQL = "SELECT TOP 5 ID, FILE_NO, F1, F2 FROM GEOLIFE_DATA";
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(SQL);
+
+			while (rs.next()) {
+				System.out.println(rs.getInt("ID") + ", "
+						+ rs.getInt("FILE_NO") + ", " + rs.getString("F1")
+						+ ", " + rs.getString("F2"));
+			}
+			rs.close();
+			stmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("OK");
+	}
+	
+	public boolean initExperiment(String time_filter){
+		//time_filter = "12:48:4[0-1]";
+		boolean result = true;
+		
+		try {
+			//CREATE EXPERIMENT
+			System.out.print("Creating Experiment [ " + time_filter + " ]...");
+			pstmt = con.prepareStatement("{call dbo.CREATE_EXPERIMENT(?)}");
+			// @TIME_FILTER
+			pstmt.setString(1, time_filter);
+			pstmt.execute();
+			pstmt.close();
+			System.out.println("OK");
+
+			//System.out.print("Creating JAVA Mapping...");
+			pstmt = con.prepareStatement("{call dbo.CREATE_JAVA_MAPPING_TABLE}");
+			pstmt.execute();
+			pstmt.close();
+			//System.out.println("OK");
+
+		} catch (SQLException e) {
+			result = false;
+			e.printStackTrace();
+		}
+
+		return result;		
+	}
+	
+	public int getCountUsers(){
+		int result = -1;
+		try {
+			//System.out.print("COUNT USERS=");
+			String SQL = "SELECT COUNT(DISTINCT [USER_A]) AS COUNT_USERS FROM [EXPERIMENT_AGG_RESULTS]";
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(SQL);
+			rs.next();
+			result = rs.getInt("COUNT_USERS");
+			//System.out.println(result);
+			rs.close();
+			stmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	public double[][] getDistanceOfUsers(){
+		double[][] result = new double[this.getCountUsers()][this.getCountUsers()];
+
+		try {
+			String SQL = "SELECT USER_A, USER_B, DISTANCE FROM RESULTS_WITH_MAPPING ORDER BY USER_A, USER_B";
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(SQL);
+			
+			while (rs.next()) {
+				result[rs.getInt("USER_A")][rs.getInt("USER_B")] = rs.getDouble("DISTANCE"); 
+			}
+			rs.close();
+			stmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
+	
+	public int[][] getNumberOfPapers(String filter){
+		int[][] result = new int[this.getCountUsers()][3];
+		try {
+			String SQL = "{call dbo.RESULTS_WITH_COUNT(?)}";
+			pstmt = con.prepareStatement(SQL);
+			// @PAPER_FILTER			
+			pstmt.setString(1, filter);
+			rs = pstmt.executeQuery();
+			
+			while (rs.next()) {
+				result[rs.getInt("JAVA_ID")][0] = rs.getInt("COUNT_PAPERS");
+				result[rs.getInt("JAVA_ID")][1] = rs.getInt("COUNT_WITH_FILTER");
+                                result[rs.getInt("JAVA_ID")][2] = rs.getInt("TOTAL_TITLE_BYTES");
+
+			}
+			rs.close();
+			stmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	
+
+}

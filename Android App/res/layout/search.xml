@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/logoback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="match_parent">
+        <Button android:text="Go" android:layout_height="wrap_content" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_below="@+id/radioGroup1" android:layout_alignLeft="@+id/radioGroup1" android:layout_marginTop="31dp" android:width="100dp"></Button>
+        <RadioGroup android:id="@+id/radioGroup1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_alignLeft="@+id/editText1">
+            <RadioButton android:id="@+id/radio0" android:checked="true" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="RW"></RadioButton>
+            <RadioButton android:id="@+id/radio1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="BFS"></RadioButton>
+            <RadioButton android:id="@+id/radio2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="MOEAD"></RadioButton>
+            <RadioButton android:id="@+id/radio3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="NSGAII"></RadioButton>
+        </RadioGroup>
+        <TextView android:id="@+id/textView1" android:text="Search: " android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="23dp" android:layout_marginTop="58dp"></TextView>
+        <EditText android:text="optimization" android:id="@+id/editText1" android:layout_height="wrap_content" android:layout_width="190dp" android:layout_below="@+id/textView1" android:layout_alignLeft="@+id/textView1"></EditText>
+    </RelativeLayout>
+</LinearLayout>

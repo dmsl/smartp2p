@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render
+END
+AWTDrawer.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render/AWTDrawer.java
+END
+Projection2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render/Projection2D.java
+END
+Projection3D.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render/Projection3D.java
+END
+AWTDrawer2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render/AWTDrawer2D.java
+END
+AWTDrawer3D.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render/AWTDrawer3D.java
+END
+AbstractDrawer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render/AbstractDrawer.java
+END
+Projection.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/render/Projection.java
+END

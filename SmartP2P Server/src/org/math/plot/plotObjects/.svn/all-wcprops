@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects
+END
+Label.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/Label.java
+END
+BaseLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/BaseLine.java
+END
+Plotable.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/Plotable.java
+END
+RasterImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/RasterImage.java
+END
+Axis.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/Axis.java
+END
+Line.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/Line.java
+END
+BasePlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/BasePlot.java
+END
+Editable.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/Editable.java
+END
+Noteable.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/Noteable.java
+END
+Base.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/Base.java
+END
+BaseLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/BaseLabel.java
+END
+BaseDependant.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/BaseDependant.java
+END
+PaintImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/smartp2p/!svn/ver/87/SmartP2P%20Project/SmartP2P%20Server/src/org/math/plot/plotObjects/PaintImage.java
+END

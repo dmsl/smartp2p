@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/Users/Christos/Documents/Microsoft SQL Server JDBC Driver 3.0/sqljdbc_3.0/enu/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Christos/Documents/matlabcontrol-4.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Christos/Documents/jmathio.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Christos/Documents/jmatharray.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Christos/Documents/jmathplot.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
